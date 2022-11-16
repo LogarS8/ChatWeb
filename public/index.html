@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">  <link rel="stylesheet" href="css/style.css">
+		<!--<link rel="stylesheet" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"/>-->
+		<!--<link rel="stylesheet" href="css/style.css"/>-->
+		<title>Chat con WebSockets</title>
+	</head>
+	<body>
+		<div class="join-container">
+			<nav class="navbar bg-light">
+				<div class="container-fluid">
+				<a class="navbar-brand" href="#">Chat con WebSockets - Lopez Garnica Rodrigo - 5IV7</a>
+				</div>
+			</nav>
+            <br>
+			<form action="chat.html">
+				<div class="form-floating mb-3">
+					<label for="floatingInput">Correo</label>
+					<input type="email" name="email" class="form-control" id="email" placeholder="Ingresa una direccion de correo electronico" required>
+				</div>
+				<div class="form-floating">
+					<label for="floatingPassword">Usuario</label>
+					<input type="text" class="form-control" name="username" id="username" placeholder="Ingresa tu nombre de usuario" required>
+				</div>
+                <br>
+				<label for="room">Canales</label>
+				<select class="form-select" aria-label="Default select example" name="room" id="room">
+					<option selected>Selecciona un canal de mensajes</option>
+					<option value="Oscio">Oscio</option>
+					<option value="Programacion">Programacion</option>
+					<option value="Entretenimiento">Entretenimiento</option>
+					<option value="Novedades">Novedades</option>
+				</select>
+                <br>
+				<button type="submit" class="btn btn-outline-success">Inicar Chat</button>
+			</form>
+
+		</div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+	</body>
+</html>
